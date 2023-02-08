@@ -4,12 +4,16 @@
 ### run unrar with no arg to get help ###
 
 ```
+git clone https://github.com/lrobot/alpine-unrar.git
+cd alpine-unrar
 docker run --rm -it -v `pwd`:/wkdir `docker build -q .` unrar
 ```
 
 ### run unrar to extract ###
 
 ```
+git clone https://github.com/lrobot/alpine-unrar.git
+cd alpine-unrar
 docker run --rm -it -v `pwd`:/wkdir `docker build -q .` unrar x fakerarfile.rar
 ```
 
